@@ -3,9 +3,9 @@ body {
 }
 
 h1 {
-    color: rgba(8, 141, 165, 1);
+    color: rgba(8,141,165,1);
     margin-left: 100px;
-    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px .5px 4px rgba(0,0,0, 0.6);
 }
 
 .container {
@@ -20,14 +20,14 @@ h1 {
         SELECT ALL SQUARES IN THE ARRAY
 -----------------------------------------------------------*/
 .container .squares:nth-child(-n+4) {
-    background-image: url("../Images/Icons/simleyface1.png");
+    background-image: url("../Images/Icons/smileyface1.png");
     color: #fff;
     float: left;
     width: 100px;
     height: 100px;
     margin: 5px;
-    border: 1PX SOLID BLACK;
-    border-radius: 254;
+    border: 1px SOLID black;
+    border-radius: 25%;
     cursor: pointer;
     transition: transform .5s ease-in-out;
 }
@@ -41,7 +41,7 @@ h1 {
     font-weight: 900;
     text-align: center;
     margin: 0;
-    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 1px 4px rgba(0,0,0, 0.8);
 }
 
 /* --------------------------------------------------------
@@ -72,7 +72,7 @@ h1 {
     animation-name: race;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2);
 }
 
 .squares:nth-child(1) :hover {
@@ -97,7 +97,7 @@ h1 {
 @keyframes race {
     0%, 100% {
         transform: translateY(0px);
-        background-image: url("../Images/Icons/Smileyface2.png")
+        background-image: url("../Images/Icons/smileyface2.png")
     }
     50% {
         transform: translateY(330px)

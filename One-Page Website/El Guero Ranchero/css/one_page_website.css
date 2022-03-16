@@ -1,0 +1,11 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+
+.rsvp {
+    width: 15 px;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 7px;
+}

@@ -4,4 +4,10 @@ This repository is created to highlight projects displaying HTML and CSS.
 
 -----------------------------------------------------------------------------
 
-<h3> Prpjects </h3>
+<h2> Projects </h2>
+<ul>
+  <li>Trail Running Site</li>
+  <li>Movie Theater Site</li>
+</ul>
+
+<h3>Trail Running Site</h3>

@@ -41,34 +41,50 @@
 
 		<!-- VIDEO-->
 		<video width="320" height="240" controls>
-			<source src="./videos/Video1.MP4" type="video/mp4" alt="Video cannot be shown at this time.">
+			<source src="./Videos/Video_1.MP4" type="video/mp4" alt="Video cannot be shown at this time.">
 		  </video>
 		<!-- End VIDEO -->
 
 		<!-- MEDIA -->
 		<section>
-			<div id="Media">
-				<h1>Photos</h1>
-				<div>
-
-					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./images/Thumb/thumbnail_1.png" alt="The image is sleeping, come back later.">
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-
-					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./images/Thumb/thumbnail_2.png" alt="The image is sleeping, come back later.">
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-
+			<div class="row">
+				<div class="column">
+				  <img src="./Images/Thumb/thumbnail_1.png" style="width:15%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+				  <img src="./Images/Thumb/thumbnail_2.png" style="width:15%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
 				</div>
 			</div>
+			
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+			  
+				  <div class="mySlides">
+					<div class="numbertext">1 / 2</div>
+					<img src="./Images/Thumb/thumbnail_1.png" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">2 / 2</div>
+					<img src="./Images/Thumb/thumbnail_2.png" style="width:100%">
+				  </div>
+
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			  
+				  <div class="caption-container">
+					<p id="caption"></p>
+				  </div>
+
+				  <div class="column">
+					<img class="demo cursor" src="./Images/Thumb/thumbnail_1.png" style="width:15%" onclick="currentSlide(3)" alt="EGR">
+				  </div>
+				  <div class="column">
+					<img class="demo cursor" src="./Images/Thumb/thumbnail_2.png" style="width:15%" onclick="currentSlide(4)" alt="EGR">
+				  </div>
+				</div>
+			  </div>
 		</section>
 		<!-- END MEDIA-->
 
@@ -112,6 +128,6 @@
 			Follow him on <a href="https://www.instagram.com/elgueroranchero/?hl=en" target="new">Instagram</a>
 		</div>
 		<!-- END FOOTER -->
-
+		<script src="./JS/gueroRanchero.js" defer></script>
 	</body>
 </html>
